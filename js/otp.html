@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        #div1{
+            border: 2px solid black;
+            text-align: center;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        #output{
+            border: 2px dotted blue;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <label for="" id="username">User Name : </label>
+        <input type="" id="input" placeholder="name">
+        <br><br>
+        <label for="">Phone No : </label>
+        <input type="text" id="phone" placeholder="number">
+        <br><br>
+        <button onclick="gen_otp()">Send OTP</button>
+        <br><br>
+
+        <div id="output">
+            
+        </div>
+    </div>
+
+    <script>
+        function gen_otp()
+        {
+            // var x = Math.random()       // Generates the random no b/n 0 to 1 (in float) every time
+            // console.log(x)    
+            
+            var x = Math.random()*(9999-1000)+1000        // ((HN-LN)+LN) 4 dig -> 9999(HN-Highest no), 1000(LN)
+            // console.log(x)       // x is in float no
+
+            var otp = Math.floor(x)         // to remove the float nos -> fun -> Math.floor()
+            console.log(otp)
+            var name = document.getElementById("input").value           // .value to get or fetch the data
+            document.getElementById("output").innerHTML = "Dear "+ name +" Your OTP : "+otp         // .innerHTML to put the data
+        }
+        
+
+    </script>
+</body>
+</html>

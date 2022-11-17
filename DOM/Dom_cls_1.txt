@@ -1,0 +1,7 @@
+Document Object Model (DOM):
+the Occunent Object is platefora and language-neutral
+interface that allows programs •nd scr#ts to dynamically access
+and update the content,strucutre and style 04 a document.
+
+
+

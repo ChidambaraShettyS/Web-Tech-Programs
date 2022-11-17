@@ -1,0 +1,31 @@
+div ul{                 /* To make css we shd call the tag with there Parent tags */
+    list-style-type: none;          /* To Revome the Bullets from the List*/
+}
+
+div ul li{                  /* To make css we shd call the tag with there Parent tags */
+    background-color: aquamarine;
+    width: 200px;
+    border: 2px solid white;
+    height: 50px;
+    line-height: 50px;   /* To make the text in middle it shd be same as li ht */
+    text-align: center;     /* To make the content in center */
+    float: left;            /* To make the List Horizontal */
+}
+
+div ul li:hover{                    /* To Change the color to new color */
+    background-color: yellowgreen;
+
+}
+
+div ul li ul li{
+    display: none;          /* To make the content INVISIBLE*/
+}
+
+div ul li:hover ul li{          /* To make the content VISIBLE*/
+    display: block;
+}
+
+
+
+
+

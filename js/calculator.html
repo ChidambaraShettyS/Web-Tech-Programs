@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{
+            border: 5px solid black;
+            border-radius: 50px;
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(226, 187, 140);
+            margin: auto;
+            width: 50%;
+        }
+        h2{
+            background-color: rgb(238, 87, 87);
+            border: 5px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>CALCULATOR</h2>
+
+        <label for="">Number 1:</label>
+        <input type="text" id="ip1">
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <br><br>
+
+        <label for="">Number 2:</label>
+        <input type="text" id="ip2">
+        <button onclick="div()">/</button>
+        <button onclick="mul()">*</button>
+        <br><br>
+
+        <label for="">Result : </label>
+        <input type="text" id="op">
+        <button onclick="clr()">Clear</button>
+    </div>
+    <script>
+        
+        
+
+        function add()
+        {
+            a = document.getElementById("ip1").value
+            b = document.getElementById("ip2").value
+            c = parseInt(a) + parseInt(b)
+            document.getElementById("op").value = c        
+        }
+
+        function sub()
+        {
+            a = document.getElementById("ip1").value
+            b = document.getElementById("ip2").value
+            c = parseInt(a) - parseInt(b)
+            document.getElementById("op").value = c        
+        }
+
+        function mul()
+        {
+            a = document.getElementById("ip1").value
+            b = document.getElementById("ip2").value
+            c = parseInt(a) * parseInt(b)
+            document.getElementById("op").value = c        
+        }
+
+        function div()
+        {
+            a = document.getElementById("ip1").value
+            b = document.getElementById("ip2").value
+            c = parseInt(a) / parseInt(b)
+            document.getElementById("op").value = c
+        }
+
+        function clr()
+        {
+            document.getElementById("ip1").value = ""
+            document.getElementById("ip2").value = ""
+            document.getElementById("op").value = ""
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
