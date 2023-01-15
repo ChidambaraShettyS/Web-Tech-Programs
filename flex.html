@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #box{
+            border: 3px solid black;
+            overflow: auto;
+            display: flex;
+            /* justify-content: space-around;
+            justify-content: space-evenly; */
+            justify-content: space-between;
+        }
+        #red{
+            height: 100px;
+            width: 30%;
+            background-color: red;
+            order: 2;
+        }
+        #green{
+            height: 100px;
+            width: 30%;
+            background-color: green;
+            order: 3;
+        }
+        #blue{
+            height: 100px;
+            width: 30%;
+            background-color: blue;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+    </div>
+</body>
+</html>

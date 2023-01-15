@@ -1,0 +1,115 @@
+DOM Selectors:
+
+1) document.getElementByTagName():
+
+        This function is bassically used to target or fetch and element from the document object model.
+this function traget th element based on tag name.
+
+ex:
+1.
+<body>
+    <h1>Document ObjectModel</h1>
+    <h1>Angular JS</h1>
+    <script>
+        var heading = document.getElementsByTagName("h1")
+        console.log(heading)
+    </script>
+</body>
+
+o/p: collection of object
+
+        w.r.t above code we are targeting the heading element based on the tag name.
+
+2.
+<body>
+    <h1>Document Object Model</h1>
+    <button onclick="red()">red</button>
+    <button onclick="yellow()">yellow</button>
+    <button onclick="green()">green</button>
+    <script>
+        var heading = document.getElementsByTagName("h1")
+        function red()
+        {
+            heading[0].style.color="red"
+        }
+        function yellow()
+        {
+            heading[0].style.color="yellow"
+        }
+        function green()
+        {
+            heading[0].style.color="green"
+        }
+        
+    </script>
+</body>
+
+    w.r.t above code we are targeting the heading element using get element by tag name function.
+This function targets the selecting elements and store it in array like object so, 
+hence to access we have to use index position
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
