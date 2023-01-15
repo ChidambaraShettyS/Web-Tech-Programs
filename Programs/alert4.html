@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+  
+if (name==null || name=="")
+{  
+  alert("Name can't be blank");  
+  return false;   
+}
+document.write("Registered");
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="/action-page.php" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Class: <input type="text" name="class"><br/> 
+Age: <input type="number" name="age"><br/>  
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>

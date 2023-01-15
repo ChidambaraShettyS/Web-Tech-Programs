@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Students Marks Details</title>
+<body>
+<p id="demo"></p>
+<script>
+function stdmar()
+{
+let m1=ParseInt(document.getElementById("demo".value));
+let m2=ParseInt(document.getElementById("demo".value));
+let m3=ParseInt(document.getElementById("demo".value));
+
+var tot=(m1+m2+m3);
+var avg=(tot/3);
+}
+</script>
+<form name="form1">
+<h2>Average of marks is :</h2>
+Name: <input type="text" name="name"><br/>  
+Class: <input type="text" name="class"><br/> 
+Marks : <input type="text"  name="text"/>
+        <input type="text"  name="text"/>
+        <input type="text"  name="text"/>
+<br>Result : <input type="text"  name="resulttext"/>
+
+<br><input type="button" value="Average" onclick="stdmar()">
+</body>
+</head>
+</html>
